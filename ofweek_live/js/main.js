@@ -47,14 +47,15 @@ jQuery(function($) {
 
 
     //下拉加载 
-    var dropDwonLoad=function(){
-    	var $more = $("#js-more"),
+    var dropDwonLoad = function() {
+        var $more = $("#js-more"),
             loading = true,
-            pageIndex = 2,
+            pageIndex = 1,
             html = "";
-    	function getListData(pageIndex){
-    		$.ajax({
-                url: "js/live.txt?pageIndex="+pageIndex,  //http://www.ofweek.com/onlivemeetingajax.do
+
+        function getListData(pageIndex) {
+            $.ajax({
+                url: "js/live.txt?pageIndex=" + pageIndex, //http://www.ofweek.com/onlivemeetingajax.do
                 dataType: 'json',
                 success: function(data) {
 
@@ -62,6 +63,7 @@ jQuery(function($) {
                         $more.remove(); //没有数据则移除更多按钮
                         return; //如果没有数据则返回
                     }
+                    html = "";
 
                     for (var i in data) {
                         for (var j in data[i]) {
@@ -140,19 +142,20 @@ jQuery(function($) {
 
             });
 
-    	}
+        }
+        getListData(pageIndex);
 
-    $(window).scroll(function() {
-        
-          if($(this).scrollTop()+$(window).height()>=$more.offset().top+$more.outerHeight() && loading){
-            $more.html("<span>加载中</span>").addClass("loading");
-            loading = false; //防止加载多次
-            getListData(pageIndex);
-            pageIndex++;
+        $(window).scroll(function() {
 
-        };
-    });
-         
+            if ($(this).scrollTop() + $(window).height() >= $more.offset().top + $more.outerHeight() && loading) {
+                $more.html("<span>加载中</span>").addClass("loading");
+                loading = false; //防止加载多次
+                pageIndex++;
+                getListData(pageIndex);
+
+            };
+        });
+
     }
 
     dropDwonLoad();
