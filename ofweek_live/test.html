@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	 <link rel="stylesheet" type="text/css" href="http://images.ofweek.com/css/ofw-global-steven.css"/>
+	 <link rel="stylesheet" type="text/css" href="css/live.css"/>
+	 <script type="text/javascript" src="http://images.ofweek.com/js/home/jquery.js"></script>
+
+</head>
+<body>
+	<script type="text/javascript">
+		var data=[[{"summary":"近两年，智能可穿戴市场出现井喷之势。Apple Watch、小米手环、VR眼镜等新奇科技产品纷纷登台亮相，可穿戴市场风口似乎已经降临。据相关数据显示，2015年全球可穿戴设备出货量将达到7610万部，与2014年..","startTime":"2016-08-09 17:12:00","id":"1","coverImgUrl":"http://expo.ofweek.com/upload/exhibition/2016/05/53977.png","status":0,"name":"2016中国可穿戴在线展会","company":"More创建的公司","coverId":1,"endTime":"2016-08-10 17:12:00","isShow":0},{"summary":"0816","startTime":"2016-08-16 09:13:00","id":"7","coverImgUrl":"http://live.ofweek.com/static/upload/ofweekLive/index/3OHP4YJNVS68J846MJ6.png","status":0,"name":"网络科技","company":"More创建的公司","coverId":3,"endTime":"2016-08-17 09:13:00","isShow":0},{"summary":"摘要测试内容摘要测试内容摘要测试内容摘要测试内容摘要测试内容","startTime":"2016-08-26 15:11:00","id":12189696,"coverImgUrl":"http://webinar.ofweek.com/upload/activity/media/2/l1393222375531.gif","status":0,"name":"直播未开始测试","company":"泰克科技","endTime":"2016-08-26 15:11:00","lecturer":"老张"},{"summary":"老胡老胡老胡老胡老胡老胡老胡老胡老胡摘要","startTime":"2016-08-29 16:11:00","id":12222464,"coverImgUrl":"http://webinar.ofweek.com/upload/activity/media/2/l1387244551776.gif","status":0,"name":"直播未开始测试","company":"OFweek显示网","endTime":"2016-08-29 16:11:00","lecturer":"老胡"}],[{"summary":"0821","startTime":"2016-08-19 10:11:20","id":"10","coverImgUrl":"http://live.ofweek.com/static/upload/ofweekLive/index/4251r2999.jpg","status":2,"name":"0821","company":"More2创建的公司","coverId":1,"endTime":"2016-08-19 10:11:23","isShow":0}],[{"summary":"08.21","startTime":"2016-08-19 10:11:20","id":"10","coverImgUrl":"http://live.ofweek.com/static/upload/ofweekLive/index/4251r2999.jpg","status":2,"name":"0821","company":"More2创建的公司","coverId":1,"endTime":"2016-08-19 10:11:23","isShow":0}]]
+
+     var html="";
+     for(var i in data){
+      for(var j in data[i]){
+      html+='<dl>';
+      html+='<dt class="fl">';
+      html+='<a href="" target="_blank"><img src='+data[i][j].coverImgUrl+'></a>';
+      html+='<i></i>';
+      if(data[i][j].lecturer){
+        if(data[i][j].status==0){
+         html+='<span>直播预告</span>';
+
+      }else if(data[i][j].status==2){
+         html+='<span>直播中</span>';
+
+      }else if(data[i][j].status==4){
+         html+='<span>直播结束</span>';
+
+      }
+
+      }else{
+        if(data[i][j].status==0){
+         html+='<span>直播预告</span>';
+
+      }else if(data[i][j].status==1){
+         html+='<span>直播中</span>';
+
+      }else if(data[i][j].status==2){
+         html+='<span>直播结束</span>';
+      }
+
+    }
+      html+='</dt>';
+      html+='<dd class="fr">';
+      html+='<h3><a href="http://expo.ofweek.com/Libattery_NEV/ " target="_blank">'+data[i][j].name+'</a></h3>';
+      html+='<div class="timeshare">';
+      html+='<strong>'+data[i][j].startTime +'-'+data[i][j].endTime+'</strong>';
+      html+='<div class="jiathis_style fr liveshare">';
+      html+='</div>';
+      html+='</div>';
+      html+='<p>'+data[i][j].summary+'<a href="http://expo.ofweek.com/Libattery_NEV/ " target="_blank">详细</a></p>';
+      html+='<div class="opera">';
+      html+='<a href="http://expo.ofweek.com/audience/gotoRegisterExhibition.xhtml " class="red_btn" target="_blank">观众登记</a>';
+      html+='</div>';
+      html+='</dd>';
+      html+='</dl>';
+         
+      }
+
+		}
+
+		$(html).appendTo($("body"));
+
+    	/* $.ajax({
+	   url:"js/live.txt?pageIndex="+1,
+     dataType:'json',
+	   success:function(data){
+		 var data=$.parseJSON(data);
+     //var data=eval("("+data+")");
+		 if(!data.length){
+			 $more.remove(); //没有数据则移除更多按钮
+			 return;   //如果没有数据则返回
+		}
+		 
+
+
+		// $(html).hide().insertBefore($more).fadeIn(1500);
+		// $more.html("更多").removeClass("loading");
+		// loading = true;
+		// pageIndex++;
+		$(html).appendTo($("body"));
+	}
+
+	 });*/
+
+
+	</script>
+</body>
+</html>

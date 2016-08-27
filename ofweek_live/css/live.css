@@ -1,0 +1,139 @@
+html{width:100%;height:100%;}
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, blockquote, th, td, p, img{margin:0;padding:0;border:0;}
+body{color:#333;font-family:simsun,Arial; width:100%; margin:0 auto;font-size:12px; text-align:left;}
+table {border-collapse:collapse;border-spacing:0;}
+img {border:0;}
+div:after, ul:after, li:after,dl:after{clear: both;content: " ";display: block;font-size: 0;height: 0;visibility: hidden;*zoom:1;}
+ul,ol{list-style-type:none;}
+select,input,img,select{vertical-align:middle;}
+.clear{clear:both; font-size:0; height:0;visibility:hidden;overflow:hidden;*zoom:1;}
+a{color:#4e4e4e;}
+a:link,a:visited{color:#4e4e4e; text-decoration:none;}
+a:hover{ color:#cc0000;}
+h1{font-size:16px; font-weight:bold;}
+h2,h3,h4,h5{font-size:14px;font-weight:bold;}
+hr{ padding:0; border:0; margin:0; height:0; background:none; display:block;*margin: -7px 0 -9px;}
+h6{ text-align:center;font-weight:bold;}
+.gray,.gray a:link,.gray a:visited{color:#666;}
+.gray a:hover{color:#cc0000;}
+.red,.red a,.red a:link,.red a:visited,.red a:hover{color:#cc0000;}
+.white,.white a,.white a:link,.white a:visited,.white a:hover{color:#fff;}
+a:link,a:visited{color:#000;}
+a:hover{color:#cc0000;text-decoration:underline;}
+.nav_index li:after{clear:none;}
+.g-topbar-loginbar,.g-topbar-logininfo:after{clear:none;display:inline;}
+.fl{float: left; display: inline;}
+.fr{float: right;display:inline;}
+/*live*/
+body{background:#f5f5f5;color: #666;}
+#g-topbar .g-topbar-nav a{margin: 0 10px;}
+#g-topbar .g-topbar-nav a:hover,#g-topbar .g-topbar-loginbar a:hover{color: #c00;}
+#g-topbar .redbg a:hover{color: #fff;}
+.g-wrap{width:1000px;}
+.main-wrapper{width:1000px;margin-left: auto;margin-right: auto;}
+
+#live-pos{height: 50px; line-height: 50px;color: #9e9e9e;background: #fff;}
+#live-pos .main-wrapper{position: relative;}
+#live-pos p{position: absolute;right: 0;top:0}
+#live-pos h1{font:20px/50px "microsoft yahei";color:#c00;}
+#live-pos a,#live-pos p span{color:#666;}
+#live-pos a:hover{color:#c00;}
+#live-pos p a{margin-right: 8px;}
+#live-pos p span{margin-left: 8px;}
+
+.main_box{ background:#f5f5f5; padding-top:30px; padding-bottom:69px;}
+.main_box .main_left{width:730px;}
+.main_box .main_right{width:250px;}
+.pub_con_box{ background:#fff; border:1px solid #dcdcdc; position:relative;}
+.mt33{margin-top:33px;}
+.mt13{margin-top:13px;}
+.pub_con_box .bar{width:2px; height:22px; background:#2581e5; position:absolute;left:-1px; top:13px;}
+.live_list dl{ padding:20px 18px 20px 20px;background: #fff; margin-bottom: 15px; vertical-align: top;*zoom:1;}
+.live_list dl dt{ position:relative;width:262px; height:173px;text-align: center;}
+.live_list dl dt img{max-width: 262px;max-height: 173px; vertical-align: middle;}
+.live_list dl dt i{ display: inline-block; vertical-align:middle; height: 100%;}
+.live_list dl dt span{position: absolute;left:20px;top:-10px;width:65px; height: 20px; background: url(../images/ico_live.png) 0 0 no-repeat; text-align: center;font:14px/20px "microsoft yahei";color:#fff;}
+.live_list dt .bg{width:262px; height:40px; position:absolute;left:0;bottom:0; background:#000; opacity:0.45; filter:alpha(opacity=45);}
+.live_list dt .date_box{color:#fff; font-family:Microsoft Yahei;font-size:14px; position:absolute;left:0;bottom:0; height:40px; line-height:40px; text-align:center;width:262px; letter-spacing:1px;}
+.live_list dt .date_box span{ font-size:20px;}
+.live_list dd{width:402px; margin-top:-5px;position: relative;}
+.live_list dd h3{font-family:Microsoft Yahei;font-size:20px;line-height: 24px; color:#333; font-weight:normal;margin-bottom:14px;}
+.upcoming dd h3{margin-bottom:10px;}
+.live_list dd p{font-size:12px;color:#666; line-height:20px;margin-top:7px;}
+.live_list dd p a{color:#ce0808;}
+.live_list dd p a:hover{color:#f04848;}
+.live_list dd strong{ float: left; background:url(../images/ico_rclock.gif) left center no-repeat; line-height:22px; font-size:12px;color:#c60000; font-weight:normal; padding-left:20px;}
+.liveshare{padding-right: 7px;}
+
+.live_list .opera{margin-top: 16px;}
+.live_list .opera a{ float:right; display:inline;margin-right:10px;  height:33px; line-height:33px;text-align:center; border-radius:4px; font-family:Simsun;font-size:15px; font-weight:bold;color:#fff;}
+.live_list .opera .red_btn{width:100px;background:#cd0100;}
+.live_list .opera .orange_btn{width:136px; background:#ff6e00;}
+
+.live-hotline dt{background:#cd0100;padding: 0 23px 0 24px;height: 40px;text-align: center;}
+.live-hotline dt .title-bg{background:url(../images/title_line.gif) center center repeat-x;}
+.live-hotline dt h2{background:#cd0100;font:bold 16px/40px "microsoft yahei";color:#fff; display: inline-block;*display: inline;*zoom:1; padding: 0 9px;}
+.live-hotline dd{background: #fff;padding: 25px 0 46px 12px;}
+.live-hotline dd p{font-size: 12px;color:#555; font-weight: bold; background: url(../images/ico_concact.gif) 0 0 no-repeat;padding-left: 28px;line-height: 32px;}
+.live-hotline dd .live-email{line-height: 16px;margin-bottom: 15px;}
+.live-hotline dd .live-phone{background-position: 0 -29px;line-height: 17px;}
+
+.sharelink{width: 55px; height: 22px; display: block; background: url(../images/share.png) 0 0 no-repeat !important;color: #7e7e7e;line-height: 22px;text-indent: 25px;}
+.sharelink:hover,.sharelink.active{background-position: 0 -22px !important;color: #fff;text-decoration:none;}
+
+.banner
+{
+	position: relative;
+	border-bottom: solid 1px #ce0808;
+}
+.banner,.banner_list,.banner_list li
+{
+	margin: 0 auto;
+	width: 1000px;
+	height: 260px;
+}
+.banner_list li
+{
+	position:absolute;
+	top:0;
+	left:0;
+	background-position:center top;
+	background-repeat:no-repeat;
+}
+.banner_list li a
+{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.banner .dot_list
+{
+	position:absolute;
+	left:0;
+	bottom:20px;
+	width: 100%;
+	text-align: center;
+}
+.banner .dot_list li
+{
+	width:15px;
+	height:15px;
+	background:url(http://expo.ofweek.com/images/b_ico.png) no-repeat center top;
+	display: inline-block;
+	*display:inline;
+	*zoom:1;
+	margin:0 8px;
+	cursor:pointer;
+}
+.banner .dot_list li.active
+{
+	width:50px;
+	background:url(http://expo.ofweek.com/images/b_ico_hov.png) no-repeat center top;
+}
+
+#footer{background: #d8d8dc;padding: 44px 0 69px;}
+#footer p{line-height: 22px;}
+.fix{position: fixed;left:50%;margin-left:250px;top:0;}
+
+.more{width:100%; height:40px; display:block;margin-bottom:80px; line-height:40px; text-align:center;background:#fff url(../images/more_down.png) 382px center no-repeat;font-size: 14px;color: #000; }
+.more.loading span { display: inline-block; padding-left: 30px; background: #fff url(../images/loading.gif) 0 50% no-repeat; }
